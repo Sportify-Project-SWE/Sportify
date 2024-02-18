@@ -1,18 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
-import { Auth } from './component/auth.jsx'
+import { db } from "./config/firebase"
+import { getDocs, collection, addDoc } from "firebase/firestore"
 
 function App() {
   const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div className="App">
-        <Auth />
-      </div> 
-
-    </>
-  )
+  return
 }
 
 export default App
