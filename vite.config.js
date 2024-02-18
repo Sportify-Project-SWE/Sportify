@@ -11,7 +11,9 @@ export default defineConfig({
       input: {
         welcome: resolve(__dirname, 'index.html'),
         login: resolve(__dirname, 'src/login/index.html'),
-        product: resolve(__dirname, 'src/product/index.html')
+        product: resolve(__dirname, 'src/product/index.html'),
+        inventory: resolve(__dirname, 'src/inventory/index.html'),
+        cart: resolve(__dirname, 'src/cart/index.html')
       }
     }
   }

@@ -1,27 +1,27 @@
 import { useState, useEffect } from 'react'
-import './product.css'
+import './cart.css'
 import { db } from "../config/firebase"
 import { getDocs, collection, addDoc } from "firebase/firestore"
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './product.css'
+import './cart.css'
 
-function Product() {
+function Cart() {
   const [count, setCount] = useState(0)
   return(
     <>
-        <p>
-            Product Page
-        </p>
+      <p>
+          Cart Page
+      </p>
     </>
   )
 }
 
-export default Product
+export default Cart
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-      <Product />
+      <Cart />
     </React.StrictMode>,
 )

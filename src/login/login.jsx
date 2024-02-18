@@ -57,7 +57,14 @@ export const Auth = () => {
             <h1>Login</h1>
             <p>
                 Sign in using email/password
-                <a href="../product/">test linke to product</a>
+                <br></br>
+                <a href="../product/">test linke to product page</a>
+                <br></br>
+                <a href="../inventory/">test link to inventory page</a>
+
+                <br></br>
+                <a href="../cart/">test link to cart page</a>
+   
                 <br></br>
                 <input 
                     placeholder="Email..."
