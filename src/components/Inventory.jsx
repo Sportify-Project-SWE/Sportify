@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
-import './inventory.css'
+
 import { db } from "../config/firebase"
 import { getDocs, collection, addDoc } from "firebase/firestore"
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './inventory.css'
+import { BrowserRouter } from 'react-router-dom'
+
 
 function Inventory() {
   const [count, setCount] = useState(0)
@@ -81,8 +82,3 @@ function Inventory() {
 
 export default Inventory
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-      <Inventory />
-    </React.StrictMode>,
-)
