@@ -13,22 +13,15 @@ export const Auth = () => {
     
     const [user, setUser] = useState({})
     const [isSignedIn, setIsSignedIn] = useState(false)
-    const [isSignedOut, setIsSignedOut] = useState(false)
-
     
     const navigate = useNavigate();
 
     useEffect( () => {
         if (isSignedIn){
-            navigate("/store")
+            navigate("/profile")
         } 
     }, [isSignedIn, navigate])
 
-    useEffect( (signedOut) => {
-        if (isSignedOut){
-            navigate("/")
-        } 
-    }, [isSignedOut, navigate])
 
 
     onAuthStateChanged( auth, (currentUser) => { 
@@ -132,13 +125,6 @@ export const Auth = () => {
                 <br></br>
                 <button onClick={signInWithGoogle}> Sign In With Google </button>
             </p>   
-
-                <h4>User logged in:</h4>
-                {user?.email}
-
-                <br></br>
-                <button onClick={logOut}> Sign Out </button>
-
             
                 
         </div>
