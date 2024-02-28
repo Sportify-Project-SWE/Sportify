@@ -5,7 +5,7 @@ import { onAuthStateChanged } from 'firebase/auth'
 
 
 function NavBar(){
-    const [isSignedIn, setIsSignedIn] = useState("")
+    const [isSignedIn, setIsSignedIn] = useState(false)
     const [dropdownOn, setDropdownOn] = useState(false)
 
     useEffect(() => {
@@ -35,8 +35,8 @@ function NavBar(){
                     { dropdownOn &&
                         <ul id="accountDropdownList">
                             <a href="/inventory">Inventory  </a>
-                            {isSignedIn ? (<a href to="/profile">Profile  </a> ) 
-                                : ( <a href to="/login">Login  </a> ) }
+                            {isSignedIn ? (<a href="/profile">Profile  </a> ) 
+                                : ( <a href="/login">Login  </a> ) }
                         </ul> }
                 </div>
                 
