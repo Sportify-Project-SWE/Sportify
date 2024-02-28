@@ -1,0 +1,27 @@
+.product-list-container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 2vh;
+    color: black;
+}
+
+.product-container {
+    width: 20vh;
+    height: 20vh;
+    background-color: white;
+    margin: 2vh;
+
+}
+
+.product-container button {
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+
+}
+
+.product-container button:hover {
+    border: 4px solid darkgray;
+}

@@ -121,6 +121,11 @@ nav a:hover {
   color: grey;
 }
 
+nav button {
+  background-color: rgba(0, 0, 0, 0); 
+}
+
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -146,3 +151,4 @@ nav a:hover {
   color: lightgray;
   margin: 5px;
 }
+

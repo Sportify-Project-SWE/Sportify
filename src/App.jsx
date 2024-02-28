@@ -3,7 +3,7 @@ import { useState} from 'react'
 import './App.css'
 
 import Home from './components/Home'
-import Catalog from './components/Catalog'
+import Catalog from './components/Store/Catalog'
 import Auth from './components/Auth'
 import Inventory from './components/Inventory'
 import Profile from './components/Profile'
