@@ -13,7 +13,8 @@ export const Auth = () => {
     
     const [user, setUser] = useState({})
     const [isSignedIn, setIsSignedIn] = useState(false)
-    
+    const [signInFailure, setSignInFailure] = useState(false)
+
     const navigate = useNavigate();
 
     useEffect( () => {
@@ -21,6 +22,12 @@ export const Auth = () => {
             navigate("/profile")
         } 
     }, [isSignedIn, navigate])
+
+    useEffect( () => {
+        if (signInFailure){
+            return( '')
+        } 
+    }, [signInFailure])
 
 
 
@@ -35,10 +42,19 @@ export const Auth = () => {
             setIsSignedIn(true)
             setLoginEmail('');
             setLoginPassword('');
-        } catch (err) {
-            console.error(err)
+        } catch (e) {
+            if (e instanceof FirebaseAuthInvalidCredentialsException) {
+                notifyUser("Invalid password");
+            } else if (e instanceof FirebaseAuthInvalidUserException) {
+                notifyUser("Incorrect email address");
+            } else {
+                notifyUser(e.getLocalizedDescription());
+            }
         }
     };
+
+
+    
 
     const createAccount = async () => {
         try{
@@ -74,7 +90,7 @@ export const Auth = () => {
     }
 
     return (
-        <div>
+        <div classname='login-container'>
             <h1>Login</h1>
             <p>
                 Sign in using email/password

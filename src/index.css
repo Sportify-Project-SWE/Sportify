@@ -1,7 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: calibri, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   line-height: 1.5;
-  font-weight: 400;
+ 
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -13,15 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
 }
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   margin: 0;
@@ -31,10 +26,6 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 button {
   border-radius: 8px;
@@ -47,9 +38,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -66,4 +59,90 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.content-container {
+  background-image: url('./assets/background.png');
+  /* Additional background styles */
+}
+
+
+nav {
+  position: fixed;
+  top: 0vh;
+  left: 0vh;
+  right: 0vh;
+  height: 90px;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  margin: 1vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  height: 50px;
+  width: 50px;
+}
+
+nav h1{
+  font-size: 50px;
+  margin: 0;
+}
+
+nav input {
+  margin: 5vh;
+  border-radius: 30px;
+  border: 2px solid gray;
+  font-size: large;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50vh;
+  font: calibri;
+}
+
+nav ul{
+  font-size: large;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vh;
+}
+
+
+nav a {
+  color: whitesmoke;
+  margin: 1vh
+}
+
+nav a:hover {
+  color: grey;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#accountDropdownList {
+  position: absolute;
+  background-color: #242424;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 0;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  display: block;
+}
+
+#accountDropdownList a {
+  color: whitesmoke;
+  margin: 5px;
+}
+
+#accountDropdownList a:hover{
+  color: lightgray;
+  margin: 5px;
 }
