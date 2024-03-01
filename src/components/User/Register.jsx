@@ -11,8 +11,7 @@ export const Register = () => {
 
     const [user, setUser] = useState({});
     const [isSignedIn, setIsSignedIn] = useState(false)
-    const [signInFailure, setSignInFailure] = useState(false)
-
+    
     const[error, setError] = useState("")
 
     const navigate = useNavigate();
@@ -36,7 +35,7 @@ export const Register = () => {
 
     const createAccount = async () => {
         if (registerPassword !== registerConfirmPassword) {
-          setError("Passwords do not match");
+          setError("Passwords do not match.");
           return;
         }
         
