@@ -1,0 +1,57 @@
+
+nav {
+    position: fixed;
+    top: 0vh;
+    left: 0vh;
+    right: 0vh;
+    height: 90px;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav img {
+    margin: 1vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    height: 50px;
+    width: 50px;
+  }
+  
+  nav h1{
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  nav input {
+    margin: 5vh;
+    font-size: large;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50vh;
+    font: calibri;
+  }
+  
+  nav ul{
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vh;
+  }
+  
+  
+  nav a {
+    color: whitesmoke;
+    margin: 1vh
+  }
+  
+  nav a:hover {
+    color: grey;
+  }
+  
+  nav button {
+    background-color: rgba(0, 0, 0, 0); 
+  }
+  

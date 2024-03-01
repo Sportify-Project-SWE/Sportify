@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { onAuthStateChanged, signOut } from 'firebase/auth'
-import { auth } from '../config/firebase'
+import { auth } from '../../config/firebase'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -21,7 +21,7 @@ function Profile() {
 
     useEffect( (signedOut) => {
         if (isSignedOut){
-            navigate("/login")
+            navigate("/login/")
         } 
     }, [isSignedOut, navigate])
 
