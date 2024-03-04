@@ -6,13 +6,6 @@
   
 }
 
-.nav-bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
 .logo 
 {
   height: 6em;
@@ -62,4 +55,8 @@
 
 .container-fluid{
   margin-top: 100%;
+}
+
+.content {
+  margin-top:90px
 }

@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className = 'content'></div>
+      <div className = 'content'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login/" element={<Auth />} />
@@ -31,7 +31,7 @@ function App() {
         <Route path="/register/" element={ <Register />} />
         <Route path="*" element={<Error />} />
       </Routes> 
-      
+      </div>
       
     </div>
   )
