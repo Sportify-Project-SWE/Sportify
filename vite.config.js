@@ -6,6 +6,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../', // Output directory set to the root
+    outDir: './Sportify', // Output directory set to the root
   } 
 })
