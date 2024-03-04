@@ -2,7 +2,7 @@ import { useState} from 'react'
 
 import './App.css'
 
-import Home from './components/Home'
+import Home from './components/Home/Home'
 import Catalog from './components/Store/Catalog'
 import Auth from './components/User/Auth'
 import Inventory from './components/Admin/Inventory'

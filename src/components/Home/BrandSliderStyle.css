@@ -9,6 +9,7 @@
 
 .slider-container{
     margin-top: 10%;
+    width: 100vh;
     background-color: black;
     object-fit: cover;
 }

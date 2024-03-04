@@ -1,9 +1,9 @@
 import React from "react"
 import Marquee from 'react-fast-marquee'
-import Nike from "../assets/Nike.webp"
-import Adidas from "../assets/adidas.jpg"
-import Everlast from "../assets/Everlast.png"
-import Wilson from "../assets/Wilson.jpg"
+import Nike from "../../assets/Nike.webp"
+import Adidas from "../../assets/adidas.jpg"
+import Everlast from "../../assets/Everlast.png"
+import Wilson from "../../assets/Wilson.jpg"
 import './BrandSliderStyle.css'
 
 

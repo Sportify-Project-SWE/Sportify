@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import Card from './CardUI'
-import Img1 from '../assets/image.webp'
-import Img2 from '../assets/img.png'
+import Img1 from '../../assets/image.webp'
+import Img2 from '../../assets/img.png'
 
 
 class Cards extends Component{
