@@ -40,7 +40,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: whitesmoke;
 }
 
 button:focus,
@@ -67,59 +67,6 @@ button:focus-visible {
 }
 
 
-nav {
-  position: fixed;
-  top: 0vh;
-  left: 0vh;
-  right: 0vh;
-  height: 90px;
-  background-color: black;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-}
-
-nav img {
-  margin: 1vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  height: 50px;
-  width: 50px;
-}
-
-nav h1{
-  font-size: 50px;
-  margin: 0;
-}
-
-nav input {
-  margin: 5vh;
-  border-radius: 30px;
-  border: 2px solid gray;
-  font-size: large;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 50vh;
-  font: calibri;
-}
-
-nav ul{
-  font-size: large;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100vh;
-}
-
-
-nav a {
-  color: whitesmoke;
-  margin: 1vh
-}
-
-nav a:hover {
-  color: grey;
-}
 
 .dropdown {
   position: relative;
@@ -148,3 +95,8 @@ nav a:hover {
 }
 
 
+input {
+  border-radius: 30px;
+  border: 2px solid gray;
+  padding: 10px
+}

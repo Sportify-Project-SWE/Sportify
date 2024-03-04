@@ -1,0 +1,19 @@
+.login-container {
+    display: inline-block;
+    justify-content: center;
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px
+    
+}
+
+.login-container input {
+    margin: 5px;
+}
+
+.login-container button {
+    margin: 5px;
+}
+
+
+

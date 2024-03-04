@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client'
 
 import { useState, useEffect } from 'react'
 
-import { db } from "../config/firebase"
+import { db } from "../../config/firebase"
 import { getDocs, collection, addDoc } from "firebase/firestore"
 
-
+import Product from './Product'
 import { BrowserRouter } from 'react-router-dom'
 
+import "./styles.css"
 
 function Catalog() {
   const [count, setCount] = useState(0)
@@ -35,12 +36,13 @@ function Catalog() {
     getProductList();
   }, [productsCollectionRef])
 
+
   return(
-    <>
-        <p>
-            Product Page
-        </p>
-    </>
+    <div className="product-list-container">
+        {productList.map((product, index) => (
+          <Product key={index} product={product} />
+        ))}
+    </div>
   )
 }
 
