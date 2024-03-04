@@ -1,8 +1,9 @@
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
 .nav-bar {
@@ -47,4 +48,18 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.img{
+  width:20em;
+  border-radius: 10%;
+}
+
+.row{
+  display: flex;
+  
+}
+
+.container-fluid{
+  margin-top: 100%;
 }

@@ -11,6 +11,7 @@ import Cart from './components/Cart'
 import NavBar from './components/NavBar'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
+
 function App() {
   const [count, setCount] = useState(0)
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path="/profile" element={ <Profile />} />
 
       </Routes> 
+      
+      
     </div>
   )
 }
