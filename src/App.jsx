@@ -20,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <div className = 'content'></div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login/" element={<Auth />} />
