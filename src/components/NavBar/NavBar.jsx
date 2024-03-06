@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { auth } from '../../config/firebase'
 import { onAuthStateChanged } from 'firebase/auth'
+import logo from "../../../src/assets/logo.svg";
+import home from "../../../src/assets/home.svg"
+
 
 import "./NavBar.css"
 
@@ -25,11 +28,13 @@ function NavBar(){
 
     return(
         <nav>
-            <img src="../../src/assets/logo.svg" alt="Sportify Logo" height={25} width={25} />
+            <img src={logo} alt="Sportify Logo" height={25} width={25} />
             <h1>SPORTIFY</h1>
             <input placeholder="Search"></input>
             <ul>
-                <a href="/" className="nav-link" >Home  </a>
+                <a href="/" className="nav-link" >
+                    <img src={home} alt="Home" height={10} width={10} />
+                </a>
                 <a href="/store/" className="nav-link">Shop  </a>
                 <a href="/cart/" className="nav-link">Cart  </a>
                 

@@ -49,7 +49,7 @@ export const Register = () => {
     return (
         <div className="login-container">
             <div className='container2'>
-            <p>
+            
                 <div className="input-container">
                     <input 
                         placeholder="Email..."
@@ -58,6 +58,8 @@ export const Register = () => {
                         onChange={ (e) => setRegisterEmail(e.target.value) }
                     />
                 </div>
+
+                
                 
                 <br></br>
                 <div className="input-container">
@@ -83,7 +85,7 @@ export const Register = () => {
                 <button onClick={createAccount}> Create Account </button>
                 {error && <div className="error-message">{error}</div>}
                 
-            </p>
+            
             </div>   
         </div>
     )

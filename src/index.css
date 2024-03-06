@@ -1,5 +1,5 @@
 :root {
-  font-family: calibri, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: system-ui, sans-serif;;
   line-height: 1.5;
  
 
@@ -11,6 +11,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #000000; /* Define primary color */
+  --secondary-color: #6c757d; /* Define secondary color */
+  --accent-color: #FFFFFF; /* Define accent color */
 }
 
 a {
