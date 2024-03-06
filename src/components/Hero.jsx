@@ -10,9 +10,9 @@ function Hero(props) {
   return(
     <>
     <div className={props.className}>
-        <img alt= "heroImage" src={props.heroImg}/>
+        <img alt= "heroImage" src={props.heroImg} className='hero-pic'/>
 
-        <div className="hero-text">
+        <div>
             <h1 className='h1-text'>{props.title}</h1>
             <p className='body-text'>{props.text}</p>
         </div>

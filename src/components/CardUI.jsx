@@ -7,7 +7,9 @@ const Card = props =>{
                 <img src={props.imgsrc} alt="Runner" className="img"/>
             </div>
             <div className="card-body text-dark">
-                <h4 className="card-title">Runner</h4>
+                <h4 className="card-title">{props.title}</h4>
+                <p className="card-details">{props.detail}</p>
+                <a href="#" className='card-btn'>Shop Now</a>
             </div>
         </div>
     );

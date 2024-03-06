@@ -1,7 +1,5 @@
 import { useState} from 'react'
-
 import './App.css'
-
 import Home from './components/Home'
 import Catalog from './components/Store/Catalog'
 import Auth from './components/User/Auth'
@@ -11,6 +9,8 @@ import Cart from './components/Cart'
 import NavBar from './components/NavBar/NavBar'
 import Register from './components/User/Register'
 import Error from './components/Error'
+
+
 
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
@@ -30,6 +30,10 @@ function App() {
         <Route path="/register/" element={ <Register />} />
         <Route path="*" element={<Error />} />
       </Routes> 
+      
+
+
+      
       
       
     </div>

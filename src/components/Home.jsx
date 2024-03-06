@@ -1,15 +1,21 @@
 import React from 'react'
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {fab} from '@fortawesome/free-brands-svg-icons'
 import ReactDOM from 'react-dom/client'
 import Hero from '../components/Hero'
 import Marquee from '../components/BrandSlider'
-import HeroImg from "../assets/ff.jpg"
+import Footer from './Footer'
+import HeroImg from "../assets/sport.png"
+import Card from '../components/Cards'
+
 import './Home.css'
 import './BrandSliderStyle.css'
 import './Hero.css'
 
 
-
 import { useState } from 'react'
+
+
 
 
 function Home() {
@@ -22,7 +28,15 @@ function Home() {
     title="Train Hard"
     text="Save big"
     />
+   
     <Marquee />
+    <Card />
+    
+
+    <Footer />
+    
+    
+    
 
     
    
@@ -32,4 +46,5 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;
+library.add(fab)
