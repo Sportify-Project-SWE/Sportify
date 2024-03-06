@@ -1,33 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Marquee from './BrandSlider.jsx'
-import HeroImg from "../../assets/ff.jpg"
 import Card from './Cards.jsx'
-import './BrandSliderStyle.css'
-
-
-
-import { useState } from 'react'
+import './Home.css'
 
 
 function Home() {
  
   return(
-    <>
-    <>
-    <div className="hero">
-        <img alt= "heroImage" src={HeroImg}/>
-
-        <div className="hero-text">
-            <h1 className='h1-text'>Train Hard</h1>
-            <p className='body-text'>Save Big</p>
-        </div>
-    </div> 
-    </>
-
-    <Marquee />
-    <Card />
-    </>
+    <div className='content' >
+      <div className='home-container'>
+        <div className="hero">
+          <h1>Train Hard</h1>
+          <h2>Save Big</h2>
+        </div> 
+        <Card />
+        <Marquee />
+      </div>
+    </div>
     
   )
 }

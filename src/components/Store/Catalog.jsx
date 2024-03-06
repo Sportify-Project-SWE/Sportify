@@ -38,10 +38,12 @@ function Catalog() {
 
 
   return(
-    <div className="product-list-container">
+    <div className='content'>
+      <div className="product-list-container">
         {productList.map((product, index) => (
           <Product key={index} product={product} />
         ))}
+      </div>
     </div>
   )
 }

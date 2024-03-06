@@ -57,6 +57,7 @@ export const Auth = () => {
     }
 
     return (
+        <div className='content'>
         <div className='login-container'>
             <h1>Login</h1>
 
@@ -101,6 +102,7 @@ export const Auth = () => {
             </div>
             
                 
+        </div>
         </div>
     )
 }

@@ -34,7 +34,7 @@ function Profile() {
     }
 
   return(
-    <>
+    <div className='content'>
         <p>
             <h4>User logged in:</h4>
                 {user?.email}
@@ -43,7 +43,7 @@ function Profile() {
             <button onClick={logOut}> Sign Out </button>
         </p>
         
-    </>
+    </div>
   )
 }
 

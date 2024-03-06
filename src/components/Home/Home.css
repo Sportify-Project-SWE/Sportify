@@ -1,30 +1,79 @@
-.brand-caro{
-    margin-top: 15%;
-    font-size: 90px;
+.home-container {
+    display: block;
+  
+}
+.hero {
+    background-image: url("../../assets/sport.png");
+    display: block;
+    text-align: center;
+    background-size: cover;
+    height: calc(100vw * 0.55);
 }
 
+.hero h1 {
+    color: var(--secondary-color);
+    font-size: calc(100vw * 0.1);
 
+}
 
-.hero{
-    width: 100vh;
-    height: 100%;
-    margin-top: 5%;
+.hero h2 {
+    color: var(--secondary-color);
+    font-size: calc(100vw * 0.05);
+ 
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    
+}
+
+.card-container {
+    width: calc(100vw * 0.20);
+}
+.card-container img {
+    border-radius: 10%;
+    height: calc(100vw * 0.35);
+    width: 100%;
+    border: 5px solid black;
+    object-fit: cover;
+}
+
+.card-body{
+    margin-top: 1vh;
     display: flex;
     justify-content: center;
 }
 
-
-img{
-    width: 70vh;
+.slider-container{
+    background-color: black;
     object-fit: cover;
-    opacity: 80%;
-    
+    position: inherit;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px 
 }
 
-.hero-text{
-    position: absolute;
-    right: 70%;
-    font-family: 'Empera';
-    font-size: 50px;
-    top: 20%;
+.slider-container h1 {
+    font-size: 35px;
 }
+
+.brand-container {
+    display: flex;
+}
+
+.brand-logo{
+    width: 75vh;
+    height: 25vh;
+    display: flex;
+}
+
+
+
+
+
+

@@ -47,6 +47,7 @@ export const Register = () => {
       };
 
     return (
+        <div className='content'>
         <div className="login-container">
             <div className='container2'>
             
@@ -87,6 +88,7 @@ export const Register = () => {
                 
             
             </div>   
+        </div>
         </div>
     )
 }

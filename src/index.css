@@ -1,34 +1,25 @@
 :root {
   font-family: system-ui, sans-serif;;
-  line-height: 1.5;
-  
- 
 
+  --primary-color: #000000; 
+  --background-color: #333333;
+  --secondary-color: #FFFFFF; 
+  --accent-color: #333333; 
+  
   color-scheme: light dark;
+  
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary-color: #000000; /* Define primary color */
-  --secondary-color: #6c757d; /* Define secondary color */
-  --accent-color: #FFFFFF; /* Define accent color */
 }
 
 a {
   text-decoration: none;
-}
-
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 
@@ -39,13 +30,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--primary-color);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: whitesmoke;
+  border-color: var(--accent-color);
 }
 
 button:focus,
@@ -55,48 +46,23 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --primary-color: whitesmoke; 
+    --background-color: whitesmoke;
+    --secondary-color: #000000; 
+    --accent-color: #333333;
   }
-  a:hover {
-    color: #747bff;
-  }
+
   button {
     background-color: #f9f9f9;
   }
 }
 
-.content-container {
-  background-image: url('./assets/background.png');
-  /* Additional background styles */
-}
 
 
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-#accountDropdownList {
-  position: absolute;
-  background-color: #242424;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  padding: 0;
-  margin-top: 10px;
-  border-radius: 10px;
-  width: fit-content;
-  display: block;
-}
-
-#accountDropdownList a {
-  color: whitesmoke;
-  margin: 5px;
-}
-
-#accountDropdownList a:hover{
-  color: lightgray;
-  margin: 5px;
+.content {
+  margin-top: 15vh;
+  width: 100%;
+  height: 50%;
 }
 
 
