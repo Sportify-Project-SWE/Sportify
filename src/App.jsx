@@ -1,5 +1,4 @@
 import { useState} from 'react'
-
 import './App.css'
 
 import Home from './components/Home/Home'
@@ -11,6 +10,8 @@ import Cart from './components/Cart'
 import NavBar from './components/NavBar/NavBar'
 import Register from './components/User/Register'
 import Error from './components/Error'
+
+
 
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
