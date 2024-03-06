@@ -1,0 +1,25 @@
+.brand-logo{
+    margin-top: 10%;
+    width: 200px;
+    margin: 0px 40px;
+    height: 180px;
+    display: flex;
+    
+}
+
+.slider-container{
+    margin-top: 10%;
+    width: 100vh;
+    background-color: black;
+    object-fit: cover;
+}
+
+.brand-logo{
+    margin-top: 20%;
+}
+
+
+.title{
+    font-family: 'Empera';
+    font-size: 25px;
+}

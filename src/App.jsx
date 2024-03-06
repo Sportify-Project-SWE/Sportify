@@ -1,6 +1,7 @@
 import { useState} from 'react'
 import './App.css'
-import Home from './components/Home'
+
+import Home from './components/Home/Home'
 import Catalog from './components/Store/Catalog'
 import Auth from './components/User/Auth'
 import Inventory from './components/Admin/Inventory'
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <div className = 'content'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login/" element={<Auth />} />
@@ -30,11 +32,7 @@ function App() {
         <Route path="/register/" element={ <Register />} />
         <Route path="*" element={<Error />} />
       </Routes> 
-      
-
-
-      
-      
+      </div>
       
     </div>
   )
